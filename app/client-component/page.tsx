@@ -1,5 +1,7 @@
+'use client';
+
 import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import styles from '../page.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +17,7 @@ export default function ServerComponent() {
         gap: '1rem',
       }}>
         <h1>
-          Server Component
+          Client Component
         </h1>
         <p>
           RUNTIME ENV: <code>{process.env.RUNTIME_ENV}</code>
